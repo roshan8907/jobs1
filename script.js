@@ -53,19 +53,29 @@ function initMobileMenu() {
         });
     }
 
-    // Mobile dropdown toggle
+    // Mobile dropdown toggle - always attach for responsive behavior
     const dropdowns = document.querySelectorAll('.dropdown');
     dropdowns.forEach(dropdown => {
         const toggle = dropdown.querySelector('.dropdown-toggle');
-        if (toggle && window.innerWidth <= 968) {
+        if (toggle) {
             toggle.addEventListener('click', (e) => {
-                e.preventDefault();
-                dropdown.classList.toggle('active');
-                // Close other dropdowns
-                dropdowns.forEach(other => {
-                    if (other !== dropdown) other.classList.remove('active');
-                });
+                // Only prevent default and toggle on mobile
+                if (window.innerWidth <= 968) {
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                    // Close other dropdowns
+                    dropdowns.forEach(other => {
+                        if (other !== dropdown) other.classList.remove('active');
+                    });
+                }
             });
+        }
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+        if (window.innerWidth <= 968 && !e.target.closest('.dropdown')) {
+            dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
         }
     });
 }
