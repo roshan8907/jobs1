@@ -52,6 +52,22 @@ function initMobileMenu() {
             mobileMenuToggle.classList.toggle('active');
         });
     }
+
+    // Mobile dropdown toggle
+    const dropdowns = document.querySelectorAll('.dropdown');
+    dropdowns.forEach(dropdown => {
+        const toggle = dropdown.querySelector('.dropdown-toggle');
+        if (toggle && window.innerWidth <= 968) {
+            toggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+                // Close other dropdowns
+                dropdowns.forEach(other => {
+                    if (other !== dropdown) other.classList.remove('active');
+                });
+            });
+        }
+    });
 }
 
 // ==================== API Fetching ====================
@@ -134,7 +150,7 @@ function createJobCard(job) {
     const flagCode = countryFlags[job.country] || 'un';
     const countryFlag = `https://flagcdn.com/w40/${flagCode}.png`;
     const visaType = visaTypes[job.country] || 'Work Visa';
-    const publishedDate = job.publishedDate || 'Recently Posted';
+    const publishedDate = job.publishedDate || 'Jan 16, 2026';
 
     return `
         <div class="job-card" data-country="${job.country}" data-job-id="${job.id}">

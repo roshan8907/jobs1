@@ -513,7 +513,7 @@
             document.getElementById('sidebarLogo').src = `https://ui-avatars.com/api/?name=${encodeURIComponent(job.company)}&background=random&color=fff&size=128&bold=true`;
 
             const date = job.postedAt ? new Date(job.postedAt) : new Date('2026-01-15');
-            document.getElementById('postedDate').textContent = `Job posted on ${date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`;
+            document.getElementById('postedDate').textContent = `${date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`;
         }
 
         function showError() {
