@@ -767,30 +767,7 @@ button {
     }
 
     .logo {
-        order: 1;
-        font-size: 0;
-        flex-shrink: 0;
-        display: flex;
-        align-items: center;
-    }
-
-    .logo img {
-        display: inline-block;
-        margin-right: 6px;
-    }
-
-    .logo span {
-        font-size: 1rem !important;
-        color: var(--primary-color);
-        order: 2;
-    }
-
-    .logo::before {
-        content: 'Global ';
-        font-size: 1rem;
-        font-weight: 700;
-        color: var(--text-dark);
-        order: 1;
+        display: none !important;
     }
 
     .nav-links {
@@ -810,6 +787,12 @@ button {
     .nav-links li {
         display: block;
         flex-shrink: 0;
+    }
+
+    /* Hide Blog and About Us only in mobile view */
+    .nav-links li:nth-child(3),
+    .nav-links li:nth-child(5) {
+        display: none !important;
     }
 
     .nav-links li a {
@@ -864,23 +847,42 @@ button {
     }
 
     .countries-dropdown {
-        min-width: 100% !important;
-        padding: 0.5rem !important;
+        min-width: 280px !important;
+        padding: 1rem !important;
         flex-direction: column !important;
-        max-width: calc(100vw - 2rem);
-        left: -1rem !important;
+        max-width: 90vw;
+        left: 50% !important;
+        transform: translateX(-50%) translateY(10px) !important;
+        background: var(--bg-primary) !important;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+        border: 1px solid var(--border-color) !important;
+        border-radius: var(--radius-md) !important;
+    }
+
+    .dropdown.active .countries-dropdown {
+        transform: translateX(-50%) translateY(0) !important;
     }
 
     .dropdown-column {
         min-width: 100%;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown-column li {
+        width: 100%;
+    }
+
+    .dropdown-column li a {
+        padding: 0.8rem 1rem !important;
+        border-bottom: 1px solid var(--bg-secondary);
+        display: block;
+        width: 100%;
     }
 
     .theme-toggle {
-        order: 3;
-        width: 34px;
-        height: 34px;
-        flex-shrink: 0;
+        display: none !important;
     }
 
     .mobile-menu-toggle {

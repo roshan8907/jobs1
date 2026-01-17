@@ -330,6 +330,13 @@ function initJobsPage() {
     }
 }
 
+// Add listener to handle URL changes if user clicks a country link while already on jobs.html
+window.addEventListener('popstate', () => {
+    if (window.location.pathname.includes('jobs.html')) {
+        initJobsPage();
+    }
+});
+
 function filterAndRenderJobs() {
     const keyword = document.getElementById('searchInput') ? document.getElementById('searchInput').value.toLowerCase() : '';
     const location = document.getElementById('locationFilter') ? document.getElementById('locationFilter').value : '';
