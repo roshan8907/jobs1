@@ -961,6 +961,10 @@ button {
     .section-title {
         font-size: 2rem;
     }
+
+    .opportunities .section-header {
+        display: none !important;
+    }
 }
 
 @media (max-width: 640px) {
