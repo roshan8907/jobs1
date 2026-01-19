@@ -9,7 +9,6 @@ var jobsData = [
         country: "uk",
         type: "Full-time",
         industry: "Technology",
-        salary: "Competitive Salary + Equity",
         image: "https://ui-avatars.com/api/?name=Ankar&background=000&color=fff&size=128&bold=true",
         description: `GTM, Strategy & Delivery
 
@@ -47,6 +46,60 @@ What else you might want to know
         visaSponsorship: true,
         publishedDate: "Jan 19, 2026",
         externalUrl: "https://jobs.ashbyhq.com/ankar"
+    },
+    {
+        id: 2,
+        slug: "engineer-digital-library-university-of-leeds",
+        title: "Engineer (Digital Library)",
+        company: "University of Leeds",
+        location: "Leeds, England, United Kingdom",
+        country: "uk",
+        type: "Full-time",
+        industry: "Information Technology",
+        image: "https://ui-avatars.com/api/?name=University+of+Leeds&background=random&color=fff&size=128&bold=true",
+        description: `Engineer (Digital Library)
+
+The interviews will be held on the Wednesday 4th March 2026
+
+This role will be based on the university campus with scope for it to be undertaken in a hybrid manner. We are also open to discussing flexible working arrangements.
+
+Are you interested in using your development and support knowledge and skills in a diverse Product Engineering function for Digital Library services? Are you an enthusiastic and driven individual with a desire to be part of a team delivering high-quality IT services to support digital access to the Libraries’ Cultural Collections?
+
+The University of Leeds is one of the top 135 universities in the world. We have a truly global community, with more than 39,000 students from 170 different countries and over 9,000 staff of 100 different nationalities.
+
+The University’s Cultural Collections comprise hundreds of thousands of rare books, manuscripts, archives, art works and museum artefacts. Our collections offer a rich resource for researchers, students and the wider research community.
+
+As an Engineer with Python development skills, you will be working as part of a team to deliver the technical infrastructure and services of the Digital Library Infrastructure Project (DLIP), during and beyond the life of the project. DLIP is a cornerstone project to support the University in meeting the objectives set out in the Digital Transformation component of the Universal Values, Global Changes, University of Leeds Strategy 2020 to 2030. It implements the Digital Futures strand of the Libraries Vision.
+
+The Digital Library Infrastructure Project will deliver a sustainable digital libraries research and education infrastructure, respond to the rapidly changing expectations of our students, staff, and partners and support the aims of University’s strategy.
+
+You will be working as part of the DLIP team to implement:
+An updated cultural collections website to improve user experience, access, and opportunities for digital creativity and cultures, featuring digital content presented in the IIIF standard;
+A modern data platform to merge data from different sources into a linked data format (Linked Art) to make it more effective, in combination with a graph-based search engine, for search, research, and teaching;
+Improvements to the process for storing and managing digital surrogates and digital born content to reduce risk and increase access;
+A foundational cloud infrastructure for digital humanities research and teaching.
+
+You will utilise your skills, knowledge and experience to support the DLIP project, working as part of the team to design, develop and implement solutions. You will have experience of development using Python, and database development through SQL. You will also use your experience of analysing and diagnosing issues in applications to support the project.
+
+Working in a complex environment, you will be liaising closely with colleagues with both technical and domain subject matter expertise, and working with a diverse range of stakeholders, and providing high quality support for applications and maintaining thorough documentation.
+
+DLIP is implementing innovative approaches and, in order to apply appropriate technical solutions, you will develop a digital library domain knowledge and an evolving understanding of the landscape, including the field of digital asset management and digital scholarship, use of data schemas and of interoperable standards such as IIIF (the International Image Interoperability Framework)
+
+Please note that due to Home Office visa requirements, this role may only be suitable for first-time Skilled Worker visa applicants if they are eligible for salary concessions. For more information please visit: www.gov.uk/skilled-worker-visa For research and academic posts, we will consider eligibility under the Global Talent visa. For more information please visit: https://www.gov.uk/global-talent.
+
+What We Offer In Return:
+- 26 days holiday plus approx.16 Bank Holidays/days that the University is closed by custom (including Christmas) – That’s 42 days a year!
+- Generous pension scheme plus life assurance– the University contributes 14.5%
+- Health and Wellbeing: Discounted staff membership options at The Edge, our state-of-the-art Campus gym, with a pool, sauna, climbing wall, cycle circuit, and sports halls.
+- Personal Development: Access to courses run by our Organisational Development & Professional Learning team.
+- Access to on-site childcare, shopping discounts and travel schemes are also available.
+
+To explore the post further or for any queries you may have, please contact:
+Anna Cale, Operations Manager
+Email: a.p.cale@leeds.ac.uk`,
+        visaSponsorship: true,
+        publishedDate: "Jan 19, 2026",
+        externalUrl: "https://jobs.leeds.ac.uk/vacancy.aspx?ref=CSUIT1833"
     }
 
 ];

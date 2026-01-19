@@ -180,34 +180,55 @@ function createJobCard(job) {
 
     const flagCode = countryFlags[job.country] || 'un';
     const countryFlag = `https://flagcdn.com/w40/${flagCode}.png`;
-    const visaType = visaTypes[job.country] || 'Work Visa';
-    const publishedDate = job.publishedDate || 'Jan 16, 2026';
+
+    // Standardize Visa Text: H-1B / EB-3 for USA, 'Visa Sponsorship' for others
+    const visaType = job.country === 'usa' ? 'H-1B / EB-3' : 'Visa Sponsorship';
+
+    const publishedDate = job.publishedDate || 'Jan 19, 2026';
+
+    // Only show logo if it's not a placeholder (not ui-avatars.com)
+    const hasRealLogo = job.image && !job.image.includes('ui-avatars.com');
 
     return `
         <div class="job-card" data-country="${job.country}" data-job-id="${job.id}">
-            <div class="job-card-header">
-                <div class="job-logo-wrapper">
-                    <img src="${logoUrl}" alt="${job.company}" class="job-logo">
+            <div class="job-card-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <div class="header-left" style="display: flex; align-items: center; gap: 0.75rem;">
+                    ${hasRealLogo ? `
+                        <div class="job-logo-wrapper" style="width: 48px; height: 48px; flex-shrink: 0;">
+                            <img src="${job.image}" alt="${job.company}" class="job-logo" style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                    ` : `
+                        <div class="flag-wrapper" style="width: 40px; height: auto; border-radius: 4px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                            <img src="${countryFlag}" alt="${job.country}" style="width: 100%; display: block;">
+                        </div>
+                    `}
                 </div>
-                ${isVisa ? `<span class="job-badge">${visaType}</span>` : ''}
+                ${isVisa ? `<span class="job-badge" style="background: var(--primary-light); color: var(--primary-color); padding: 0.4rem 0.8rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 600;">${visaType}</span>` : ''}
             </div>
+            
             <div class="job-card-content">
-                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
-                    <img src="${countryFlag}" alt="${job.country}" style="width: 24px; height: auto; border-radius: 2px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-                    <h3 class="job-title" style="margin: 0; font-size: 1.25rem;">${job.title}</h3>
-                </div>
-                <p class="job-company-name">${job.company}</p>
-                <div class="job-location">
-                    <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M10 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 1c-3.866 0-7 3.134-7 7 0 5.25 7 11 7 11s7-5.75 7-11c0-3.866-3.134-7-7-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    ${job.location}
-                </div>
-                <p class="job-description">${preview}</p>
-                <div class="job-footer">
-                    <div style="display: flex; flex-direction: column; gap: 0.25rem;">
-                        <span class="job-type">${job.type}</span>
-                        <span style="font-size: 0.75rem; color: var(--text-medium);">📅 ${publishedDate}</span>
+                <h3 class="job-title" style="margin: 0 0 0.25rem 0; font-size: 1.25rem; font-weight: 700; color: var(--text-dark);">${job.title}</h3>
+                <p class="job-company-name" style="margin-bottom: 1rem; color: var(--text-medium); font-weight: 500;">${job.company}</p>
+                
+                <div class="job-info-meta" style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.5rem;">
+                    <div class="job-location" style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-medium); font-size: 0.9rem;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        ${job.location}
                     </div>
-                    <button class="job-apply-btn" onclick="viewJob(${job.id})">Apply Now</button>
+                    <div class="job-type" style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-medium); font-size: 0.9rem;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                        ${job.type}
+                    </div>
+                </div>
+
+                <div class="job-pills" style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                    <span style="background: #eef2ff; color: #4f46e5; padding: 0.35rem 0.75rem; border-radius: 99px; font-size: 0.8rem; font-weight: 600;">${job.industry || 'General'}</span>
+                    ${isVisa ? `<span style="background: var(--bg-mint); color: var(--primary-dark); padding: 0.35rem 0.75rem; border-radius: 99px; font-size: 0.8rem; font-weight: 600;">Visa Sponsored</span>` : ''}
+                </div>
+
+                <div class="job-footer" style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-color); padding-top: 1rem;">
+                    <span style="font-size: 0.8rem; color: var(--text-light);">📅 ${publishedDate}</span>
+                    <button class="job-apply-btn" onclick="viewJob(${job.id})" style="background: var(--primary-color); color: white; border: none; padding: 0.6rem 1.2rem; border-radius: var(--radius-md); font-weight: 600; cursor: pointer; transition: all var(--transition-base);">Apply Now</button>
                 </div>
             </div>
         </div>
@@ -218,16 +239,30 @@ function renderJobs(jobs, containerId) {
     const container = document.getElementById(containerId);
     if (!container) return;
 
-    if (jobs.length === 0) {
-        container.innerHTML = `
-            <div class="empty-state">
-                <h3>No jobs found matching your criteria</h3>
-                <p>Try adjusting your search terms or location.</p>
-            </div>
-        `;
-        return;
-    }
-    container.innerHTML = jobs.map(job => createJobCard(job)).join('');
+    // Reset container with a quick fade-out effect for smoothness
+    container.style.opacity = '0';
+
+    setTimeout(() => {
+        if (jobs.length === 0) {
+            container.innerHTML = `
+                <div class="empty-state" style="animation: fadeIn 0.5s ease-out;">
+                    <h3>No jobs found matching your criteria</h3>
+                    <p>Try adjusting your search terms or location.</p>
+                </div>
+            `;
+        } else {
+            container.innerHTML = jobs.map((job, index) => {
+                const cardHtml = createJobCard(job);
+                // Wrap in a div to apply staggered animation
+                return `<div style="animation: slideUp 0.5s ease-out ${index * 0.05}s both;">${cardHtml}</div>`;
+            }).join('');
+        }
+        container.style.opacity = '1';
+        container.style.transition = 'opacity 0.3s ease';
+
+        // Initialize reveal on scroll for newly added items
+        initScrollReveal();
+    }, 50);
 }
 
 function viewJob(jobId) {
@@ -371,13 +406,56 @@ function filterAndRenderJobs() {
     renderJobs(results, 'allJobsGrid');
 }
 
+// ==================== Scroll Reveal ====================
+function initScrollReveal() {
+    const options = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+
+    // Apply to sections and cards that aren't already animated by the grid logic
+    document.querySelectorAll('.section-header, .industry-card, .seo-article-card, .country-card, .footer-section').forEach(el => {
+        if (!el.classList.contains('revealed')) {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        }
+    });
+}
+
+// Custom reveal implementation via CSS class
+document.head.insertAdjacentHTML('beforeend', `
+    <style>
+        .revealed {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+    </style>
+`);
+
+// Call on load
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(initScrollReveal, 100);
+});
+
 // ==================== Smooth Scroll ====================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         if (this.getAttribute('href') === '#') return;
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const href = this.getAttribute('href');
+        const target = document.querySelector(href);
         if (target) {
+            e.preventDefault();
             target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     });
