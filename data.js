@@ -754,7 +754,7 @@ What We Offer:
         location: "Sydney, NSW, Australia",
         country: "australia",
         type: "Full-time",
-        industry: "Health and Care",
+        industry: "Healthcare",
         salary: "$80,000 - $95,000 + benefits",
         image: "https://ui-avatars.com/api/?name=Health+Community+Recruitment&background=random&color=fff&size=128&bold=true",
         description: `Occupational Therapist - Sponsorship Opportunities in Australia
@@ -788,7 +788,7 @@ Requirements:
         location: "Regional Victoria, Australia",
         country: "australia",
         type: "Full-time / Part-time",
-        industry: "Health and Care",
+        industry: "Healthcare",
         salary: "Up to $445,000 + Super",
         image: "https://ui-avatars.com/api/?name=Sante+Recruitment&background=random&color=fff&size=128&bold=true",
         description: `Consultant Psychiatrist – Inpatient & Community Services
@@ -1332,5 +1332,575 @@ For Overseas Applicants:
         visaSponsorship: true,
         publishedDate: "Jan 16, 2026",
         externalUrl: "https://www.glassdoor.co.in/partner/jobListing.htm?jobListingId=1010000194536"
+    },
+    {
+        id: 36,
+        slug: "duty-manager-wynyard-grill-auckland",
+        title: "Duty Manager",
+        company: "Wynyard Grill",
+        location: "Auckland CBD, Auckland, New Zealand",
+        country: "new-zealand",
+        type: "Full-time / Part-time",
+        industry: "Hospitality",
+        salary: "$24.50 – $27.50 per hour",
+        image: "https://ui-avatars.com/api/?name=Wynyard+Grill&background=random&color=fff&size=128&bold=true",
+        description: `Duty Manager - Award-Winning Auckland CBD Restaurant
+
+Join the incredible team at Wynyard Grill, an award-winning restaurant located in the heart of Auckland CBD's Wynyard Quarter. We are looking for a dedicated Duty Manager to join our fun and hard-working crew.
+
+Key Responsibilities:
+- Manage bar operations in compliance with the Sale and Supply of Alcohol Act 2012.
+- Support the Restaurant Manager with roster creation and staff feedback.
+- Ensure all equipment and surface areas are sanitary and tidy.
+- Monitor fridge and freezer temperatures for Health and Safety compliance.
+- Oversee daily incident reporting and monthly stocktakes.
+- Deliver high-standard customer service on the floor.
+
+What We Offer:
+- Competitive pay rate: $24.50 – $27.50 per hour.
+- Shared tips (approx. $200 per month) and monthly performance bonuses.
+- 50% staff discounts for you, family, and partners.
+- Free meals and drinks on busy nights.
+- Support to obtain your Duty Manager certificate if not already held.
+- Flexible shifts (30-40 hours per week for full-time).
+
+Requirements:
+- Eligibility for an AEWV (Accredited Employer Work Visa) or other valid NZ work rights.
+- Previous hospitality experience (fine dining preferred but training provided).
+- Ability to reliably commute to Auckland City.
+- Duty Manager Certificate is preferred.`,
+        visaSponsorship: true,
+        publishedDate: "Jan 16, 2026",
+        externalUrl: "https://www.glassdoor.co.in/partner/jobListing.htm?jobListingId=1009999395311"
+    },
+    {
+        id: 37,
+        slug: "customer-transformation-senior-analyst-pwc-auckland",
+        title: "Customer Transformation - Senior Analyst",
+        company: "PwC",
+        location: "Auckland, New Zealand",
+        country: "new-zealand",
+        type: "Full-time",
+        industry: "Management and Strategy",
+        salary: "Competitive + Discretionary Bonus",
+        image: "https://ui-avatars.com/api/?name=Pwc&background=random&color=fff&size=128&bold=true",
+        description: `Senior Analyst - Customer Transformation
+
+Join PwC's diverse whānau of experts in Auckland. Our purpose is to build trust in society and solve important problems. As a Senior Analyst in our Customer Transformation team, you’ll turn ambiguity into clarity and ideas into action for clients across banking, retail, and government.
+
+What You'll Do:
+- Co-create human-centred solutions with designers, technologists, and strategists.
+- Work visually and analytically to map, test, and workshop service experiences.
+- Translate complex problems into clear deliverables (journey maps, insights, reports).
+- Contribute to large-scale transformation programmes from definition to implementation.
+- Utilize world-leading technology, including AI, to deliver impactful outcomes.
+
+Skills & Experience:
+- 2–4 years’ experience in service design, CX, business analysis, or transformation.
+- Background in financial services or professional services is highly regarded.
+- Relevant qualification in design, psychology, business, or a related field.
+- Strong problem-solving, visual communication, and workshop facilitation skills.
+- Ability to manage complex workloads and deliver high-quality outputs.
+
+Why Join PwC NZ:
+- Growth: Access to a global network, leadership development, and AI training.
+- Wellbeing: $250 annual allowance, comprehensive insurance, and 15 days' sick leave.
+- Flexibility: Supportive coaching culture with flexible working arrangements.
+- Whānau & Community: Paid parental leave for all parents and volunteering leave.
+- Rewards: Discretionary bonuses, retail discounts, and generous referral schemes.
+- Visa Sponsorship: AEWV sponsorship available for eligible international candidates.`,
+        visaSponsorship: true,
+        publishedDate: "Jan 16, 2026",
+        externalUrl: "https://nz.indeed.com/viewjob?jk=e4994b54ddb8543b"
+    },
+    {
+        id: 38,
+        slug: "principal-software-engineer-transpower-wellington",
+        title: "Principal Software Engineer",
+        company: "Transpower",
+        location: "Wellington, New Zealand",
+        country: "new-zealand",
+        type: "Full-time",
+        industry: "Information Technology",
+        salary: "Competitive",
+        image: "https://ui-avatars.com/api/?name=Transpower&background=random&color=fff&size=128&bold=true",
+        description: `Principal Software Engineer - National Grid Market Systems
+
+Transpower is the State-Owned Enterprise that owns and operates New Zealand's National Grid. Join our award-winning Application Services team to develop, enhance, and support mission-critical systems that deliver electricity to all New Zealanders 24/7.
+
+The Opportunity:
+As a key member of our collaborative team, you'll be involved in developing mission-critical IT systems that run the NZ electricity grid and market in real-time. You'll work on a variety of projects, including new software delivery, enhancements of existing systems, and integration of SaaS/commercial software, using modern web/mobile technologies and AI-embedded automation.
+
+About You:
+We are looking for a highly experienced Software Engineer who thinks broadly and is passionate about software delivery and quality. 
+
+Required Skills & Experience:
+- 10+ years of analysis, design, and programming experience.
+- Senior-level expertise in Spring Boot and Java.
+- Experience with .Net/C# and building RESTful web services (JSON).
+- In-depth knowledge of distributed services and microservices architecture.
+- Proficiency with Apache Camel, ActiveMQ, Kafka, Maven/Gradle, and Linux (RHEL).
+- Experience with DevOps tool-chains for CI/CD and large-scale application integration.
+
+Why Join Transpower:
+- Contribute to a 100% renewable energy future for New Zealand.
+- Collaborative work environment with extensive health and lifestyle benefits.
+- Dynamic atmosphere with over 28 nationalities represented.
+- Visa sponsorship available for suitably qualified international IT professionals.`,
+        visaSponsorship: true,
+        publishedDate: "Jan 16, 2026",
+        externalUrl: "https://www.glassdoor.co.in/partner/jobListing.htm?jobListingId=1010000268642"
+    },
+    {
+        id: 39,
+        slug: "physiotherapist-five-rivers-greytown",
+        title: "Physiotherapist",
+        company: "Five Rivers (WSM Group)",
+        location: "Greytown, South Wairarapa, New Zealand",
+        country: "new-zealand",
+        type: "Full-time / Part-time",
+        industry: "Healthcare",
+        salary: "$80,000 – $120,000 per year",
+        image: "https://ui-avatars.com/api/?name=WSM+Group&background=random&color=fff&size=128&bold=true",
+        description: `Physiotherapist - Lifestyle Change in South Wairarapa
+
+Are you seeking a lifestyle change while advancing your career? Join 'Five Rivers', a modern, integrated health centre in the heart of Greytown. We offer flexible opportunities for physiotherapists interested in musculoskeletal care, concussion rehabilitation, vocational rehabilitation, or a mixed role.
+
+The Location:
+Greytown offers an incredible semi-rural lifestyle surrounded by world-class vineyards, boutique shops, and restaurants. Located just one hour from Wellington, it provides the perfect blend of small-town charm and city access.
+
+About the Role:
+- Work in a state-of-the-art facility alongside GPs, NPs, and specialists.
+- Full access to a well-equipped gym, including VALD technology for client rehabilitation.
+- Flexibility to deliver various ACC contracts (concussion, vocational, pain management).
+- High degree of autonomy over your diary and earnings.
+
+What We Offer:
+- Competitive Salary: $80,000 – $120,000 per year.
+- Sign-On & Relocation Bonus: Generous package to ease your move.
+- Professional Development: In-house CPD programme and wellbeing-focused culture.
+- Full Visa Sponsorship: Accredited employer support for the AEWV process.
+
+Requirements:
+- Must hold or be eligible for a New Zealand Annual Practicing Certificate (APC).
+- Passion for high-quality care and collaborative teamwork.`,
+        visaSponsorship: true,
+        publishedDate: "Jan 16, 2026",
+        externalUrl: "https://www.glassdoor.co.in/partner/jobListing.htm?jobListingId=1009999406140"
+    },
+    {
+        id: 40,
+        slug: "grill-chef-boulcott-street-bistro-wellington",
+        title: "Grill Chef",
+        company: "Boulcott Street Bistro",
+        location: "Wellington, New Zealand",
+        country: "new-zealand",
+        type: "Full-time",
+        industry: "Hospitality",
+        salary: "Competitive Hourly Rate",
+        image: "https://ui-avatars.com/api/?name=Boulcott+Street+Bistro&background=random&color=fff&size=128&bold=true",
+        description: `Grill Chef - Iconic Wellington Bistro
+
+Wellington's iconic Boulcott Street Bistro is looking for an experienced Grill Chef to join our close-knit kitchen team. We serve European-influenced bistro dishes that hero local ingredients, providing an ideal creative environment for chefs to grow.
+
+Your Role:
+As the key player in executing our meat and fish cooking, you will ensure exceptional quality and presentation. Your tasks will include assisting with menu development, training junior staff, and managing food inventory and ordering.
+
+What We are Looking For:
+- Talented and passionate chef with 3+ years of relevant grill experience (Chef de Partie level).
+- Strong work ethic, ambition, and a dedicated team-player attitude.
+- Attention to detail and confidence in a high-volume European bistro environment.
+- Long-term ambition (1 year + commitment).
+
+What we Offer:
+- Full-time role with 40-45 hours per week (Closed on Sundays).
+- Competitive hourly rate and staff perks.
+- Creative environment with a frequently changing menu.
+- Potential relocation assistance for the right candidate.
+- AEWV Accredited Employer: Ability to assist with visa changes for successful applicants.`,
+        visaSponsorship: true,
+        publishedDate: "Jan 17, 2026",
+        externalUrl: "http://www.trademe.co.nz/Browse/Jobs/ApplyOnline.aspx?mode=apply_online&referenceId=5733570695&sellerId=5522903"
+    },
+    {
+        id: 41,
+        slug: "project-manager-civil-lattey-group-hastings",
+        title: "Project Manager - Civil",
+        company: "Lattey Group Ltd",
+        location: "Hastings, Hawkes Bay, New Zealand",
+        country: "new-zealand",
+        type: "Full-time, Permanent",
+        industry: "Construction",
+        salary: "Competitive + Vehicle + Benefits",
+        image: "https://ui-avatars.com/api/?name=Lattey+Group&background=random&color=fff&size=128&bold=true",
+        description: `Civil Project Manager - Infrastructure & Civil Excellence
+
+Lattey Group Ltd is a trusted leader in New Zealand’s construction sector with over 75 years of experience. We deliver innovative solutions in Precast Concrete, Piling, Crane Hire, and Bridge Construction. We are seeking a Civil Project Manager to join our team in Hastings.
+
+Your Role:
+You will be responsible for managing civil projects up to $5M in value from planning through to delivery. You will lead a skilled team, ensuring projects are delivered on-time, within scope, and within budget, with a high focus on quality and safety.
+
+Key Responsibilities:
+- Lead and mentor a high-performing civil construction team.
+- Plan and schedule projects to meet strict deadlines and budgets.
+- Oversee contractual, financial, and quality assurance requirements.
+- Prepare tenders, quotes, and submissions for future infrastructure projects.
+- Coordinate with clients and production teams for smooth project delivery.
+- Ensure strict health and safety compliance at all times.
+
+What We are Looking For:
+- 5+ years' experience as a Project Manager in civil construction.
+- Strong knowledge of NZ3910 and NZ3916 contracts.
+- Expertise in cost control, financial reporting, and deep foundations (piling).
+- Exceptional problem-solving and interpersonal skills.
+- Valid NZ Driver's Licence.
+
+Why Join Lattey?
+- Secure, long-term employment within a supportive team culture.
+- Company vehicle, phone, and laptop provided.
+- Comprehensive benefits: Health insurance, travel and meal allowances (when out of region).
+- Career development and upskilling opportunities.
+- AEWV Support: We are an accredited employer and can support visa applications if required.`,
+        visaSponsorship: true,
+        publishedDate: "Jan 17, 2026",
+        externalUrl: "http://www.trademe.co.nz/Browse/Jobs/ApplyOnline.aspx?mode=apply_online&referenceId=5733626656&sellerId=8416392"
+    },
+    {
+        id: 42,
+        slug: "pharmacist-hospital-gisborne-frontline",
+        title: "Pharmacist",
+        company: "Frontline Recruitment",
+        location: "Gisborne, New Zealand",
+        country: "new-zealand",
+        type: "Full-time",
+        industry: "Healthcare",
+        salary: "$77,000 – $108,000 per year",
+        image: "https://ui-avatars.com/api/?name=Frontline+Recruitment&background=random&color=fff&size=128&bold=true",
+        description: `Hospital Pharmacist - Clinical Excellence in Rainy Gisborne
+
+Join a high-acuity hospital with a rich history in Gisborne. We are seeking NZ registered Pharmacists who want the perfect balance of impactful clinical work and a relaxed lifestyle in a region known for its sunshine and surf.
+
+What You'll Do:
+- Provide clinical and pharmaceutical advice and education to patients and clinical staff.
+- Manage hospital discharge plans, medicine management, and educate patients on long-term conditions.
+- Actively participate in clinical consults with a multidisciplinary team (MDT).
+- Support medication safety initiatives and manage stock monitoring/rotation.
+- Maintain accurate and timely records for all patients under your care.
+
+What We Offer:
+- Competitive Salary: $77,000 – $108,000 per year.
+- Clinical supervision from a Lead Pharmacist.
+- Flexible working environment with a focus on work-life balance.
+- Free designated staff parking.
+- Rotational roster with core working hours.
+
+Requirements:
+- BPharm or equivalent and current NZ registration as a Pharmacist with APC.
+- No conditions or restrictions on practicing certificate.
+- International candidates must have the ability to gain NZ registration (COAP exam passed).
+- Excellent communication, networking, and technical computer skills.
+- High attention to detail and accurate numeracy skills.
+- AEWV Visa Sponsorship available for qualified international candidates.`,
+        visaSponsorship: true,
+        publishedDate: "Jan 16, 2026",
+        externalUrl: "https://www.careerjet.co.nz/jobad/nz59d77ea631c328eae7bf606f7df0f338"
+    },
+    {
+        id: 43,
+        slug: "subspecialist-physician-health-new-zealand-taranaki",
+        title: "Subspecialist Physician (Cardiology, Respiratory, Gastro, Rheumatology)",
+        company: "Health New Zealand - Te Whatu Ora",
+        location: "New Plymouth, Taranaki, New Zealand",
+        country: "new-zealand",
+        type: "Full-time, Permanent",
+        industry: "Healthcare",
+        salary: "Competitive (NZ MECA)",
+        image: "https://ui-avatars.com/api/?name=Health+New+Zealand&background=random&color=fff&size=128&bold=true",
+        description: `Subspecialist Physician - Join Taranaki Base Hospital
+
+We are inviting enthusiastic subspecialists in Cardiology, Respiratory Medicine, Gastroenterology, or Rheumatology to join our team at Taranaki Base Hospital. This is a unique opportunity to combine subspecialty practice with general medicine in one of New Zealand's most stunning regions.
+
+About the Role:
+The position includes a strong focus on your subspecialty while contributing to general internal medicine acute ward work. You will manage a mix of inpatient, outpatient, and procedural work, with optional involvement in our state-of-the-art Acute Assessment Unit (AAU), part of our brand new east wing facility.
+
+The Environment:
+- Supportive, collegial team with strong links to tertiary centres.
+- Competitive salary and benefits in line with the NZ MECA.
+- Comprehensive relocation assistance and immigration support.
+- Opportunities for ongoing professional development and teaching.
+
+The Taranaki Lifestyle:
+Experience the perfect balance of adventure and relaxation. Taranaki is the only place where you can ski and surf in the same day. With Mt Taranaki, world-class surf breaks, art trails, and a thriving café culture, it's an ideal place to call home.
+
+Requirements:
+- Vocationally registered (or eligible for registration) with the Medical Council of New Zealand (MCNZ).
+- Fellowship with RACP or equivalent.
+- Excellent communication and teamwork skills.
+- Commitment to holistic and equitable patient care.`,
+        visaSponsorship: true,
+        publishedDate: "Jan 16, 2026",
+        externalUrl: "https://www.glassdoor.co.in/partner/jobListing.htm?jobListingId=1009998748282"
+    },
+    {
+        id: 44,
+        slug: "truck-driver-blackhawk-trucking-cambridge",
+        title: "Truck Driver",
+        company: "BlackHawk Trucking",
+        location: "Cambridge, Ontario, Canada",
+        country: "canada",
+        type: "Full-time",
+        industry: "Logistics",
+        salary: "$24.00 per hour",
+        image: "https://ui-avatars.com/api/?name=BlackHawk+Trucking&background=random&color=fff&size=128&bold=true",
+        description: `Truck Driver - Local & Highway Work
+
+BlackHawk Trucking is hiring company drivers for local and highway work based in Cambridge, Ontario. We offer reliable, on-time weekly pay and a high-volume work environment.
+
+Key Details:
+- Pay Rate: $24.00 per hour.
+- Working Hours: 65+ hours per week.
+- Work Type: Mixture of local deliveries and highway routes.
+
+Visa & Immigration:
+- **Pre-approved LMIA** (Labour Market Impact Assessment) is available for qualified international candidates under the Temporary Foreign Worker Program (TFWP).
+- Ideal for candidates seeking stable employment with immigration support in Canada.`,
+        visaSponsorship: true,
+        publishedDate: "Jan 19, 2026",
+        externalUrl: "https://www.kijiji.ca/v-driver-security-jobs/cambridge/hiring-truck-driver/1731907573"
+    },
+    {
+        id: 45,
+        slug: "kitchen-associate-circle-k-norton",
+        title: "Kitchen Associate",
+        company: "Circle K",
+        location: "Norton, New Brunswick, Canada",
+        country: "canada",
+        type: "Full-time / Part-time",
+        industry: "Retail",
+        salary: "Competitive + Night Premium",
+        image: "https://ui-avatars.com/api/?name=Circle+K&background=random&color=fff&size=128&bold=true",
+        description: `Kitchen Associate / Customer Service Representative
+
+Join Circle K in Norton, New Brunswick. We are a large, stable employer offering flexible schedules and opportunities for fast career advancement.
+
+Your Key Responsibilities:
+- Greet customers and run the cash register.
+- Maintain store standards inside and out.
+- Work with our food program (kitchen duties).
+- Provide fast and friendly service in a high-energy environment.
+
+What We Offer:
+- Weekly pay with night shift premiums.
+- Flexible schedules and employee discounts.
+- Scholarship program and service recognition.
+- **PNP Support**: Supporting temporary workers through the Provincial Nominee Program (conditions apply).
+
+Requirements:
+- Strong communication and customer service skills.
+- Ability to perform tasks quickly while having fun.
+- Motivation to advance your career.
+- Willingness to learn and contribute to a diverse team.`,
+        visaSponsorship: true,
+        publishedDate: "Jan 18, 2026",
+        externalUrl: "https://workwithus.circlek.com/global/en/job/CIKCGLOBALR557410EXTERNALENGLOBAL/Kitchen-Associate?utm_source=linkedin&utm_medium=phenom-feeds"
+    },
+    {
+        id: 46,
+        slug: "overnight-customer-service-circle-k-dartmouth",
+        title: "Overnight Customer Service Representative",
+        company: "Circle K",
+        location: "Dartmouth, Nova Scotia, Canada",
+        country: "canada",
+        type: "Full-time / Part-time",
+        industry: "Customer Service",
+        salary: "Weekly Pay + Night Premium",
+        image: "https://ui-avatars.com/api/?name=Circle+K&background=random&color=fff&size=128&bold=true",
+        description: `Overnight Customer Service Representative
+
+Join Circle K in Cole Harbour/Dartmouth, Nova Scotia. As an Overnight Customer Service Representative, you play a vital role in keeping our store running smoothly while the world sleeps.
+
+Your Key Responsibilities:
+- Greet customers and handle transactions with a friendly attitude.
+- Maintain store cleanliness and appearance (inside and out).
+- Support the food program and manage inventory during quieter hours.
+- Perform tasks quickly and effectively in a fun, energetic environment.
+
+What We Offer:
+- Weekly pay with a night shift premium.
+- Flexible schedules for work-life balance.
+- Scholarship program and opportunities for fast career advancement.
+- **PNP Support**: Opportunity to support temporary workers through the Provincial Nominee Program (conditions apply).
+
+Requirements:
+- Strong communication and customer service skills.
+- energetic and motivated to work night shifts.
+- Team player with a willingness to learn.`,
+        visaSponsorship: true,
+        publishedDate: "Jan 18, 2026",
+        externalUrl: "https://workwithus.circlek.com/global/en/job/CIKCGLOBALR557382EXTERNALENGLOBAL/Overnight-Customer-Service-Representative?utm_source=linkedin&utm_medium=phenom-feeds"
+    },
+    {
+        id: 47,
+        slug: "emergency-veterinarian-vca-calgary",
+        title: "Summer Contract Veterinarian (ER)",
+        company: "VCA Animal Hospitals",
+        location: "Calgary, Alberta, Canada",
+        country: "canada",
+        type: "Full-time (Fixed-term)",
+        industry: "Healthcare",
+        salary: "Generous Compensation + Sign-on Bonus",
+        image: "https://ui-avatars.com/api/?name=VCA+Canada&background=random&color=fff&size=128&bold=true",
+        description: `Summer Contract Veterinarian - Emergency
+
+Calgary Animal Referral & Emergency Centre (CARE) is seeking a full-time Summer Contract Emergency Veterinarian. This role has the potential to become a permanent fall position. Join a team passionate about high-quality medicine and work-life balance.
+
+About the Role:
+- Treat a diverse and exciting emergency caseload in a specialized referral hospital.
+- Collaborate with specialty services to deliver the highest standard of care.
+- Rotate effectively through day, evening, and night shifts.
+- Access on-site diagnostics: CT, MRI, fluoroscopy, and digital radiography.
+
+What We Offer:
+- Generous compensation and sign-on bonuses.
+- Comprehensive relocation assistance and **Immigration Support**.
+- RRSP matching and paid wellness/sick days.
+- Endless professional development and mentorship opportunities.
+
+Requirements:
+- Valid veterinarian license eligible for practice in Canada.
+- Experience in soft tissue surgery and preventative care.
+- Passion for mentoring students and interns.
+- Love for all companion animals.`,
+        visaSponsorship: true,
+        publishedDate: "Jan 16, 2026",
+        externalUrl: "https://ca.indeed.com/viewjob?jk=4b034e95b0ee2620"
+    },
+    {
+        id: 48,
+        slug: "full-time-nanny-vancouver",
+        title: "Full Time Nanny (Live-in Potentially Available)",
+        company: "Private Family",
+        location: "Vancouver, British Columbia, Canada",
+        country: "canada",
+        type: "Full-time",
+        industry: "Healthcare",
+        salary: "Negotiable",
+        image: "https://ui-avatars.com/api/?name=Private+Family&background=random&color=fff&size=128&bold=true",
+        description: `Full-Time Nanny for Family in Vancouver
+
+We are a welcoming family of four (soon to be five!) looking for a dedicated full-time Nanny. We have a 9-year-old and a 2-year-old, and are expecting a newborn in May 2026. We are open to LMIA sponsorship for the right candidate.
+
+Your Role:
+- Provide high-quality care for our infant, toddler, and older child.
+- Perform light household duties (laundry, meal prep for kids, tidying).
+- Create a safe and nurturing environment.
+- Assist with running errands (Driver's license preferred but not required).
+
+What We Offer:
+- Full-time position (30-40 hours/week).
+- Separate unit available for a live-in situation if desired.
+- **Sponsorship & LMIA**: We are open to sponsoring qualified candidates.
+- Negotiable salary based on experience.
+
+Requirements:
+- Proven experience with infants and newborns is essential.
+- Basic health and safety knowledge.
+- Reliable, caring, and well-organized.`,
+        visaSponsorship: true,
+        publishedDate: "Jan 18, 2026",
+        externalUrl: "https://www.careerjet.ca/jobad/cab7a2e1085320bc04d7f86efde332f85c"
+    },
+    {
+        id: 49,
+        slug: "veterinarian-lawrence-clinic-toronto",
+        title: "Veterinarian (DVM) - Lawrence Veterinary Clinic",
+        company: "VCA Animal Hospitals",
+        location: "Toronto, Ontario, Canada",
+        country: "canada",
+        type: "Full-time",
+        industry: "Healthcare",
+        salary: "$100,000 – $150,000 per year",
+        image: "https://ui-avatars.com/api/?name=VCA+Canada&background=random&color=fff&size=128&bold=true",
+        description: `Veterinarian - Excellent Opportunity in Toronto
+
+Lawrence Veterinary Clinic is welcoming a Veterinarian to join our highly engaged team. You will diagnose and treat health needs, perform physical exams, immunizations, and surgery, all while collaborating with pet owners and support staff.
+
+What We Offer:
+- Competitive Salary: $100k - $150k based on experience.
+- RRSP 5% Employer Group Match Program.
+- Comprehensive relocation assistance and **Immigration Support**.
+- Detailed mentorship program for recent graduates.
+- Paid wellness/sick days and vacation time.
+- Professional liability insurance and CE benefits.
+
+Requirements:
+- Valid DVM from an accredited university.
+- Passion for veterinary medicine and coaching/mentoring.
+- Exceptional interpersonal skills with colleagues and pet parents.`,
+        visaSponsorship: true,
+        publishedDate: "Jan 18, 2026",
+        externalUrl: "https://www.careerjet.ca/jobad/ca35cac25fb04dc5c305b15ccc3651d09e"
+    },
+    {
+        id: 50,
+        slug: "veterinarian-dvm-englehart-animal-hospital",
+        title: "Veterinarian (DVM) - Englehart Animal Hospital",
+        company: "VetCare",
+        location: "Englehart, Ontario, Canada",
+        country: "canada",
+        type: "Full-time / Part-time",
+        industry: "Healthcare",
+        salary: "$120,000 – $140,000 per year",
+        image: "https://ui-avatars.com/api/?name=VetCare&background=random&color=fff&size=128&bold=true",
+        description: `Veterinarian - Small Town Charm, Big Opportunities
+
+Join Englehart Animal Hospital in a family-oriented community where you can enjoy picturesque views and work-life balance. We are a multifaceted hospital providing wellness, surgery, diagnostics, and emergency services.
+
+What We Offer:
+- High Salary: $120k - $140k + Production.
+- Signing & Relocation Bonuses.
+- **Comprehensive Immigration and Work Visa Support**.
+- Medical, Dental, and Life Insurance.
+- Flexible scheduling (Full-time or Part-time).
+- Access to continuing education and mentorship.
+
+Requirements:
+- 3-7 years of exp. preferred (surgical/dental proficiency).
+- Eligible for General Practice license in Ontario.
+- Passion for high-quality medicine and team leadership.`,
+        visaSponsorship: true,
+        publishedDate: "Jan 18, 2026",
+        externalUrl: "https://www.careerjet.ca/jobad/ca2a42a5a6d0c1596cbe12c167c5f44d52"
+    },
+    {
+        id: 51,
+        slug: "veterinarian-dvm-bay-regional-belleville",
+        title: "Veterinarian (DVM) - Bay Regional Veterinary Hospital",
+        company: "VetCare",
+        location: "Belleville, Ontario, Canada",
+        country: "canada",
+        type: "Full-time / Part-time",
+        industry: "Healthcare",
+        salary: "$120,000 – $160,000 per year",
+        image: "https://ui-avatars.com/api/?name=VetCare&background=random&color=fff&size=128&bold=true",
+        description: `Veterinarian - Collaborative Care in Belleville
+
+Bay Regional Veterinary Hospital is committed to the highest standards of patient care. Join a team of compassionate professionals in a vibrant work environment that values work/life balance.
+
+What We Offer:
+- Top Tier Salary: $120k - $160k + Production.
+- Signing & Relocation Bonuses.
+- **Comprehensive Immigration and Work Visa Support**.
+- Full benefits package (Medical, Dental, Vision).
+- Paid CO dues and VIN membership.
+- Mentorship and professional development funding.
+
+Requirements:
+- 3-7 years of experience with strong surgical/dental skills.
+- Eligible for full General Veterinary License in Ontario.
+- Ability to manage complex cases and emergencies.`,
+        visaSponsorship: true,
+        publishedDate: "Jan 18, 2026",
+        externalUrl: "https://www.careerjet.ca/jobad/cae763b4f1240829bc85a2541606d14008"
     }
 ];
