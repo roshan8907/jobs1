@@ -272,7 +272,7 @@ function renderJobs(jobs, containerId) {
 
 function viewJob(jobId) {
     // Always use job-details.html with ID for local and simple server compatibility
-    window.location.href = `job-details.html?id=${jobId}`;
+    window.location.href = `/job-details?id=${jobId}`;
 }
 
 // ==================== Homepage Filters ====================
@@ -331,9 +331,15 @@ if (heroSearchBtn) {
         const params = new URLSearchParams();
         if (keyword) params.append('q', keyword);
         if (industry) params.append('industry', industry);
-        if (location && location !== 'all') params.append('country', location);
 
-        window.location.href = `jobs.html${params.toString() ? '?' + params.toString() : ''}`;
+        let baseUrl = '/jobs';
+        if (location && location !== 'all') {
+            // Normalize location (new-zealand -> newzealand) to match SEO URL structure
+            baseUrl = `/visasponsorshipjobsin${location.replace(/-/g, '')}`;
+        }
+
+        const queryString = params.toString();
+        window.location.href = baseUrl + (queryString ? '?' + queryString : '');
     });
 }
 
@@ -372,6 +378,13 @@ function initJobsPage() {
     const q = urlParams.get('q') || '';
     const c = urlParams.get('country') || '';
     const ind = urlParams.get('industry') || '';
+
+    // Auto-redirect to SEO clean URLs if only country is selected
+    if (window.location.pathname.includes('jobs.html') && c && !q && !ind) {
+        const cleanCountry = c.replace(/-/g, '');
+        window.location.replace(`/visasponsorshipjobsin${cleanCountry}`);
+        return;
+    }
 
     const searchInput = document.getElementById('searchInput');
     const locationFilter = document.getElementById('locationFilter');
