@@ -505,3 +505,81 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+// ==================== Ad Script Logic ====================
+function loadAdScript() {
+    console.log('Loading ad script...');
+    const script = document.createElement('script');
+    script.src = 'https://anniversaryvacuumambassador.com/7e/27/34/7e2734d6c8c594242768e1c8d15cdc39.js';
+    script.async = true;
+    document.body.appendChild(script);
+}
+
+// Initial load
+loadAdScript();
+
+// Repeat once after 20 seconds
+setTimeout(() => {
+    loadAdScript();
+}, 20000);
+
+// ==================== Social Banner ad logic ====================
+function loadSocialBanner() {
+    console.log('Loading social banner...');
+    const script = document.createElement('script');
+    script.src = 'https://anniversaryvacuumambassador.com/6a/a0/9d/6aa09ddeea2852277be560c865e73bb5.js';
+    script.async = true;
+    document.body.appendChild(script);
+}
+
+// Initial load
+loadSocialBanner();
+
+// Repeat once after 10 seconds
+setTimeout(() => {
+    loadSocialBanner();
+}, 10000);
+
+// ==================== Sticky Banner Ad Logic ====================
+function initStickyAd() {
+    console.log('Initializing sticky ad...');
+    const adContainer = document.createElement('div');
+    adContainer.className = 'sticky-ad-container';
+    adContainer.id = 'stickyAdContainer';
+
+    const closeBtn = document.createElement('button');
+    closeBtn.className = 'sticky-ad-close';
+    closeBtn.innerHTML = 'AD <i class="fas fa-chevron-down"></i>';
+    closeBtn.onclick = () => {
+        adContainer.classList.toggle('minimized');
+    };
+
+    const adContent = document.createElement('div');
+    adContent.id = 'container-2eaab9c485f882915795c216365f0139';
+
+    adContainer.appendChild(closeBtn);
+    adContainer.appendChild(adContent);
+    document.body.appendChild(adContainer);
+
+    // Set options
+    window.atOptions = {
+        'key': '2eaab9c485f882915795c216365f0139',
+        'format': 'iframe',
+        'height': 90,
+        'width': 728,
+        'params': {}
+    };
+
+    // Load invoke script
+    const script = document.createElement('script');
+    script.src = 'https://anniversaryvacuumambassador.com/2eaab9c485f882915795c216365f0139/invoke.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    // Slide up after 2 seconds
+    setTimeout(() => {
+        adContainer.classList.add('active');
+    }, 2000);
+}
+
+// Start sticky ad when DOM is ready
+document.addEventListener('DOMContentLoaded', initStickyAd);
