@@ -377,8 +377,11 @@ function initJobsPage() {
     const locationFilter = document.getElementById('locationFilter');
     const industryFilter = document.getElementById('industryFilter');
 
+    // Normalize country name (e.g., southkorea -> south-korea)
+    const normalizedCountry = c.replace('southkorea', 'south-korea').replace('newzealand', 'new-zealand');
+
     if (searchInput) searchInput.value = q;
-    if (locationFilter) locationFilter.value = c;
+    if (locationFilter) locationFilter.value = normalizedCountry;
     if (industryFilter) industryFilter.value = ind;
 
     // Initial Filter
@@ -505,17 +508,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
-// ==================== Security Measures ====================
-// Disable Right Click
-document.addEventListener('contextmenu', event => event.preventDefault());
-
-// Disable F12 and common "Inspect Element" shortcuts
-document.addEventListener('keydown', function (e) {
-    if (e.key === 'F12' ||
-        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) ||
-        (e.ctrlKey && e.key === 'u')) {
-        e.preventDefault();
-        return false;
-    }
-}, false);

@@ -1,0 +1,21 @@
+RewriteEngine On
+
+# Remove .html extension from existing files
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^/]+)$ $1.html [L]
+
+# Custom Country URL Mappings
+# Mapping the specific requested format to the correct files or search results
+
+# USA
+RewriteRule ^visasponsorshipjobsinusa$ visa-sponsorship-jobs-in-usa.html [L]
+
+# UK
+RewriteRule ^visasponsorshipjobsinuk$ visa-sponsorship-jobs-in-uk.html [L]
+
+# Generic rule for all other countries
+# e.g., visasponsorshipjobsinaustralia -> jobs.html?country=australia
+# This allows you to have clean SEO URLs for every country you support.
+RewriteCond %{REQUEST_URI} ^/visasponsorshipjobsin([a-zA-Z0-9-]+)$
+RewriteRule ^visasponsorshipjobsin([a-zA-Z0-9-]+)$ jobs.html?country=$1 [L,QSA]
