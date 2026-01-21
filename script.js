@@ -1,4 +1,3 @@
-const API_BASE = window.location.origin; // Dynamically use the current host (works on PC and Mobile)
 // Keep existing jobsData if data.js was loaded, otherwise init empty
 if (typeof jobsData === 'undefined') {
     var jobsData = [];
@@ -10,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileMenu();
     updateNavAuth();
 
-    // Only fetch jobs if we need them (homepage or jobs page)
+    // Only load jobs if we need them (homepage or jobs page)
     if (document.getElementById('jobsGrid') || document.getElementById('allJobsGrid') || window.location.pathname.includes('jobs.html')) {
         fetchAllJobs();
     }
@@ -55,39 +54,18 @@ function initMobileMenu() {
 
     // Mobile dropdown toggle - always attach for responsive behavior
     const dropdowns = document.querySelectorAll('.dropdown');
-    console.log('Found dropdowns:', dropdowns.length);
-
     dropdowns.forEach(dropdown => {
         const toggle = dropdown.querySelector('.dropdown-toggle');
         if (toggle) {
-            console.log('Attaching click handler to dropdown toggle');
-
-            // Handle both click and touch events
             const handleToggle = (e) => {
-                console.log('Dropdown clicked, window width:', window.innerWidth);
-
-                // Only prevent default and toggle on mobile
                 if (window.innerWidth <= 968) {
                     e.preventDefault();
                     e.stopPropagation();
-
                     const wasActive = dropdown.classList.contains('active');
-
-                    // Close all dropdowns first
-                    dropdowns.forEach(other => {
-                        other.classList.remove('active');
-                    });
-
-                    // Toggle this dropdown
-                    if (!wasActive) {
-                        dropdown.classList.add('active');
-                        console.log('Dropdown opened');
-                    } else {
-                        console.log('Dropdown closed');
-                    }
+                    dropdowns.forEach(other => other.classList.remove('active'));
+                    if (!wasActive) dropdown.classList.add('active');
                 }
             };
-
             toggle.addEventListener('click', handleToggle);
             toggle.addEventListener('touchstart', handleToggle, { passive: false });
         }
@@ -101,30 +79,17 @@ function initMobileMenu() {
     });
 }
 
-// ==================== API Fetching ====================
-async function fetchAllJobs() {
-    try {
-        const response = await fetch(`${API_BASE}/api/jobs`);
-        if (response.ok) {
-            jobsData = await response.json();
-        }
-
-        // Data fetched successfully
-    } catch (error) {
-        console.warn('API Fetch failed, using local data:', error);
-        // Fallback: If jobsData is empty after failed fetch, and we have no other source, show error
-        if (!jobsData || jobsData.length === 0) {
-            const container = document.getElementById('jobsGrid') || document.getElementById('allJobsGrid');
-            if (container) container.innerHTML = '<p>Error loading jobs. Please start the server or check your connection.</p>';
-            return;
-        }
+// Load jobs from local data.js
+function fetchAllJobs() {
+    // We already have jobsData from data.js
+    if (!jobsData || jobsData.length === 0) {
+        const container = document.getElementById('jobsGrid') || document.getElementById('allJobsGrid');
+        if (container) container.innerHTML = '<p>Error loading jobs. Please check data.js.</p>';
+        return;
     }
 
-    // Continue with rendering (using either API or local data)
     // Sort jobsData by ID descending to show newest first
-    if (jobsData && jobsData.length > 0) {
-        jobsData.sort((a, b) => b.id - a.id);
-    }
+    jobsData.sort((a, b) => b.id - a.id);
 
     if (document.getElementById('jobsGrid')) {
         renderJobs(jobsData.slice(0, 6), 'jobsGrid');

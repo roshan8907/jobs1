@@ -580,33 +580,23 @@
 
     <script src="data.js?v=20260122\"></script>
     <script>
-        const API_BASE = window.location.origin;
+
         const urlParams = new URLSearchParams(window.location.search);
         const jobId = urlParams.get('id');
         let currentJob = null;
 
-        async function init() {
+        function init() {
             if (!jobId) {
                 window.location.href = 'index.html';
                 return;
             }
 
-            try {
-                // 1. Try fetching from API
-                const res = await fetch(`${API_BASE}/api/jobs/${jobId}`);
-                if (res.ok) {
-                    currentJob = await res.json();
-                }
-            } catch (err) {
-                console.warn('Backend server not running, using local data...');
-            }
-
-            // 2. Fallback to local data (data.js) if API fails
-            if (!currentJob && typeof jobsData !== 'undefined') {
+            // use local data (data.js) exclusively
+            if (typeof jobsData !== 'undefined') {
                 currentJob = jobsData.find(j => j.id == jobId);
             }
 
-            // 3. Render or Error
+            // Render or Error
             if (currentJob) {
                 renderJob(currentJob);
             } else {
