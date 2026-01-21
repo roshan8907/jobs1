@@ -136,13 +136,13 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-content">
-                <a href="index.html" class="logo">
+                <a href="/" class="logo">
                     <img src="logo-new.png" alt="Visa Sponsorship Jobs"
                         style="height: 40px; margin-right: 10px; vertical-align: middle;">
                     Visa Sponsorship Jobs - Global <span>Jobs</span>
                 </a>
                 <ul class="nav-links">
-                    <li><a href="jobs.html">Find Jobs</a></li>
+                    <li><a href="/jobs">Find Jobs</a></li>
                     <li><a href="#" id="userNameDisplay">My Profile</a></li>
                 </ul>
             </div>
@@ -197,7 +197,7 @@
 
                 const appList = document.getElementById('applicationsList');
                 if (data.applications.length === 0) {
-                    appList.innerHTML = '<p>You haven\'t applied to any jobs yet. <a href="jobs.html">Start searching!</a></p>';
+                    appList.innerHTML = '<p>You haven\'t applied to any jobs yet. <a href="/jobs">Start searching!</a></p>';
                 } else {
                     const countryCodes = {
                         'usa': 'us', 'uk': 'gb', 'canada': 'ca', 'australia': 'au', 'new-zealand': 'nz',
@@ -230,7 +230,7 @@
                                 <div class="app-meta">
                                     <span>Applied on: ${new Date(app.submittedAt).toLocaleDateString()}</span>
                                     <span>•</span>
-                                    <a href="job-details.html?id=${app.jobId}" style="color:var(--primary-color)">View Job</a>
+                                    <a href="/job-details?id=${app.jobId}" style="color:var(--primary-color)">View Job</a>
                                 </div>
                             </div>
                         </div>
